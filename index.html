@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container w-75 mx-auto">
+    <h1 class="fs-1 fw-bolder text-secondary my-3">Bookmarker</h1>
+      <hr>
+    <div class="form-project my-5 p-4 text-center">
+
+      <h2>Bookmark your favorite sites</h2>
+      <div>
+        <label for="inputName" class="fs-5 fw-bold">Site Name</label>
+        <input type="text" id="inputName" placeholder="Bookmark Name" class="form-control  my-2">
+      </div>
+      <div>
+        <label for="inputUrl" class="fs-5 fw-bold">Site URL</label>
+        <input type="text" id="inputUrl" placeholder="Website Url"  class="form-control  my-2">
+      </div>
+      <button   onclick="addBookmark()" id="addBtn"  class="btn btn-dark my-2 ">Submit</button>
+      <button   onclick="updateBook()" id="UpdateBtn"  class="btn btn-dark my-2 d-none ">Update</button>
+    </div>
+    <input oninput="searchBook()" type="search" id="searchInput" placeholder="Search By Bookmark Name ......" class="form-control my-4">
+  
+  <div class="output my-3">
+    <table class="table my-3 text-center">
+      <tbody id="tableBody">
+       
+      </tbody>
+    </table>
+  </div>
+    
+  
+  </div>  
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
